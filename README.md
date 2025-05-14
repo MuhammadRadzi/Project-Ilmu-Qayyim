@@ -1,4 +1,4 @@
 Project Ilmu Qayyim;
 
 
-git clone
+git clone (kalau mau)
