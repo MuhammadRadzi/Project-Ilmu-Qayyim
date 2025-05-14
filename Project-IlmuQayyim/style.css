@@ -1,0 +1,897 @@
+/* Main */
+
+@font-face {
+  font-family: 'criticized';
+  src: url(fonts/criticized.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F8F8FF;
+  font-family: sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#radzi {
+  transition: opacity 1s ease-in-out;
+}
+
+.logo img {
+  width: 100px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.teks-logo {
+  color: #3674B5;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 700px;
+}
+
+nav.scrolled .teks-logo {
+  color: white;
+}
+
+nav ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #3674B5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px; 
+  background-color: #3674B5;
+  transition: width 0.3s ease;
+  border-radius: 2px; 
+}
+
+nav ul li a:hover::after {
+  text-decoration: none;
+  width: 100%;
+}
+
+nav.scrolled a {
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navcol {
+  background-color: #8AAFD6;
+}
+
+.navcol a{
+  color: white;
+  transition: text-decoration 0.3s ease;
+}
+
+.navcol a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px; 
+  background-color: white;
+  transition: width 0.3s ease;
+  border-radius: 2px; 
+}
+
+.navcol a:hover::after {
+  text-decoration: none;
+  width: 100%;
+}
+
+.navcol .teks-logo {
+  color: white;
+}
+
+nav.scrolled {
+  background-color: #3674B5;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  list-style-type: none;
+  padding: 20px;
+  padding-top: 23px;
+}
+
+/* About */
+
+.siapakami-section {
+  padding: 5px 5px;
+}
+
+.siapakami-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-section h2 {
+  color: #2c6ecb;
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-left: -150px;
+}
+
+.text-section p {
+  color: #333;
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: bold;
+  margin-left: -150px;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.image-section img {
+  width: 180%;
+  margin-bottom: 50px;
+}
+
+/* end */
+
+/*  */
+
+.penawarn {
+  padding: 45px 40px;
+  background-color: #c3ceef;
+}
+
+.penawarn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0; /* hilangkan padding horizontal */
+}
+
+.penawarn-container .image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.penawarn-container .image-section img {
+  width: 70%; /* Ubah nilai ini sesuai kebutuhan, misalnya 60%, 50%, dll */
+  height: auto;
+  display: block;
+}
+
+
+.penawarn-container .text-section {
+  flex: 1;
+  min-width: 300px;
+  color: #000;
+  font-weight: bold;
+}
+
+.penawarn-container .text-section h2 {
+  color: #2c6ecb;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.penawarn-container .text-section p {
+  color: #000; /* hitam */
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+
+/* end */
+.visimisi {
+  padding: 45px 40px;
+}
+
+.visimisi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.image-section-visimisi {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-section-visimisi img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.text-section-visimisi {
+  flex: 1;
+  min-width: 300px;
+  color: #000;
+  font-weight: bold;
+}
+
+.text-section-visimisi h2 {
+  color: #2c6ecb;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.text-section-visimisi p {
+  color: #000;
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+
+
+/* Banner */
+
+.banner {
+  background-color: #3674B5;
+  height: 700px;
+}
+
+.banner img {
+  width: 100%;
+  height: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-fit: cover;
+  opacity: 50%;
+}
+
+.banner h1 {
+  position: absolute;
+  padding-left: 10%;
+  top: 59%;
+  font-weight: 800;
+  color: white;
+  font-size: 85px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: 0.3s ease;
+  transform: translateY(-300px);
+}
+
+.banner p {
+  position: absolute;
+  padding-left: 10%;
+  top: 69%;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  transition: 0.3s ease;
+  transform: translateY(-190px);
+}
+
+/* Card Catalog */
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 560px;
+  height: 570px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1000%;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+.card-description {
+  font-size: 27px;
+  color: black;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card-button {
+  padding: 10px;
+  background-color: transparent;
+  color: #3674B5;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: sans-serif;
+  border: solid #3674B5 2px;
+}
+
+.card-button:hover {
+  background-color: #3674B5;
+  color: white;
+}
+
+.content-title {
+  color: #3674B5;
+  font-family: sans-serif;
+  font-size: 40px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+/* Card Contact */
+
+.contact-title {
+  text-align: center;
+  color: #3674B5;
+  font-family: sans-serif;
+  margin: 50px;
+  margin-bottom: 100px;
+  font-size: 35px;
+}
+
+.card-container-contact {
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.card-contact {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.card-contact:hover {
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
+.card-contact a img {
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50%;
+  height: 80%;
+}
+
+.card-content-contact {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.card-title-contact {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3674B5;
+  margin-top: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+.card-description-contact {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 55px;
+  font-family: sans-serif;
+}
+
+/* Container agar Form dan Maps sejajar */
+
+.kontak-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px; 
+  padding: 40px;
+  margin-top: 80px; 
+}
+
+/* Bagian Formulir */
+
+.kontak, .lokasi {
+  font-family: sans-serif;
+  background: white;
+  padding: 30px;
+  width: 45%; 
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.kontak h2 {
+  color: #3674B5;
+  text-align: center;
+}
+
+.kontak p {
+  color: #333;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+#tengah {
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  text-align: left;
+  color: #333;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3674B5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #769bc2;
+}
+
+/* Google Maps Styling */
+
+.maps-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 359px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Grid untuk materi */
+.materi-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  padding: 40px;
+  max-width: 1800px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* Kartu Materi */
+.materi-card {
+  font-family: sans-serif;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.materi-card img {
+  width: 100%;
+  height: 160px;
+}
+
+.materi-card:hover {
+  transform: scale(1.05);
+}
+
+.materi-card h3 {
+  color: #3674B5;
+  margin-bottom: 10px;
+}
+
+.materi-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: #3674B5 solid 2px;
+  color: #3674B5;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.materi-card a:hover {
+  background-color: #3674B5;
+  color: white;
+
+}
+
+/* Isi Materi */
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: #f8f9fa;
+  padding: 20px;
+  /* border: solid 1px black; */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.back-link {
+  display: block;
+  font-size: 23px;
+  font-weight: bold;
+  color: #1a5db0;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  background-color: #A9B5DF;
+}
+
+.sidebar li:visited {
+  background-color: #A9B5DF;
+}
+
+/* Konten */
+.content-subject {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-subject h2 {
+  font-size: 23px;
+}
+
+h2 {
+  color: #1a5db0;
+  margin-bottom: 15px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-placeholder {
+  width: 100%;
+  height: 550px;
+  background: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigasi */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 2px solid #1a5db0;
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back a {
+  color: #3674B5;
+}
+
+.next {
+  background: #3674B5;
+  color: white;
+}
+
+.next a {
+  color: white;
+}
+.back a, .next a {
+  text-decoration: none;
+  font-size: 23px;
+}
+
+/* Quiz */
+
+.quiz-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.instruction {
+  background: #c4ceef;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #2a4b8d;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.question-card h3 {
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+.question-card label {
+  display: block;
+  padding: 10px 15px;
+  font-size: 23px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.question-card input[type="radio"] {
+  margin-right: 10px;
+  transform: translateX(605px);
+}
+
+.submit-btn {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background-color: #2a6ec9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1d57a6;
+}
+
+/* Footer */
+
+/* .footer {
+  background: #3674B5;
+  text-align: center;
+  height: 100px;
+  position: relative;
+}
+
+.footer .copyright p {
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.footer p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+} 
+
+.footer img {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
+  cursor: pointer;
+} */
+
+.footer {
+  background-color: #3674B5;
+  text-align: center;
+  padding: 10px 20px 30px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+cursor: pointer;
+  width: 4%;
+  height: 100%;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  display: inline-block;
+}
+
+.footer-socials img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+  border-radius: 100%;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 22px;
+  color: white;
+}
+
