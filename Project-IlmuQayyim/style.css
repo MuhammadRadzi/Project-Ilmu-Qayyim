@@ -23,7 +23,7 @@ body {
 
 .banner-button {
   position: absolute;
-  top: 68%; /* sesuaikan dengan posisi kutipan */
+  top: 70%; /* sesuaikan dengan posisi kutipan */
   left: 10%;
   transform: translateY(-130px);
   padding: 15px 35px;
@@ -203,7 +203,7 @@ nav ul {
 }
 
 .image-section img {
-  width: 180%;
+  width: 160%;
   margin-bottom: 50px;
 }
 
@@ -294,14 +294,15 @@ nav ul {
   color: #2c6ecb;
   font-size: 50px;
   margin-bottom: 15px;
+  margin-left: 150px;
 }
 
 .text-section-visimisi p {
-  color: #000;
+  color: #333;
   font-size: 25px;
   line-height: 1.6;
   font-weight: bold;
-}
+  margin-left: 150px;}
 
 
 
@@ -335,7 +336,7 @@ nav ul {
 .banner p {
   position: absolute;
   padding-left: 10%;
-  top: 69%;
+  top: 71%;
   color: white;
   font-size: 30px;
   font-family: sans-serif;
@@ -403,8 +404,8 @@ nav ul {
 
 .card-button {
   padding: 10px;
-  background-color: transparent;
-  color: #3674B5;
+  background-color: #3674B5;
+  color: #ffffff;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
@@ -416,8 +417,8 @@ nav ul {
 }
 
 .card-button:hover {
-  background-color: #3674B5;
-  color: white;
+  background-color: #ffffff;
+  color: #3674B5;
 }
 
 .content-title {
@@ -600,7 +601,8 @@ iframe {
   padding: 40px;
   max-width: 1800px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 /* Kartu Materi */
@@ -612,11 +614,15 @@ iframe {
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
 }
 
 .materi-card img {
   width: 100%;
   height: 160px;
+  border-radius: 3px;
 }
 
 .materi-card:hover {
@@ -630,11 +636,11 @@ iframe {
 
 .materi-card a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: auto; 
   padding: 10px 15px;
-  background-color: transparent;
+  background-color: #3674B5;
   border: #3674B5 solid 2px;
-  color: #3674B5;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -642,9 +648,8 @@ iframe {
 }
 
 .materi-card a:hover {
-  background-color: #3674B5;
-  color: white;
-
+  background-color: #ffffff;
+  color: #3674B5;
 }
 
 /* Isi Materi */
@@ -715,6 +720,7 @@ iframe {
 
 h2 {
   color: #1a5db0;
+  margin-left: 30px;
   margin-bottom: 15px;
 }
 
@@ -724,8 +730,8 @@ iframe {
 }
 
 .iframe-placeholder {
-  width: 100%;
-  height: 550px;
+  width: 95%;
+  height: 700px;
   background: #d3d3d3;
   display: flex;
   align-items: center;
@@ -743,6 +749,7 @@ iframe {
 
 .btn {
   padding: 10px 15px;
+  margin-left: 35px;
   border: 2px solid #1a5db0;
   background: white;
   font-size: 16px;
@@ -756,6 +763,7 @@ iframe {
 }
 
 .next {
+  margin-right: 35px;
   background: #3674B5;
   color: white;
 }
@@ -831,7 +839,8 @@ iframe {
 }
 
 .submit-btn:hover {
-  background-color: #1d57a6;
+  background-color: #ffffff;
+  color: #3674B5;
 }
 
 /* Footer */
