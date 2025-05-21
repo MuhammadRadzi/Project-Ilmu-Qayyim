@@ -164,6 +164,8 @@ nav ul {
 
 .siapakami-section {
   padding: 5px 5px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .siapakami-container {
@@ -203,8 +205,13 @@ nav ul {
 }
 
 .image-section img {
-  width: 160%;
+  width: 60%;
   margin-bottom: 50px;
+}
+
+#iqis-logo {
+  margin-left: 400px;
+
 }
 
 /* end */
