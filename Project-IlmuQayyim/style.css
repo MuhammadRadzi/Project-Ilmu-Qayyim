@@ -374,6 +374,7 @@ nav ul {
   width: 100%;
   height: 50%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card-content {
@@ -691,6 +692,8 @@ iframe {
   cursor: pointer;
   transition: 0.3s ease;
   margin-bottom: 30px;
+  border-radius: 10px;
+
 }
 
 .sidebar li a {
@@ -797,6 +800,7 @@ iframe {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .question-card {
@@ -819,6 +823,11 @@ iframe {
   border-radius: 8px;
   margin-bottom: 10px;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.question-card label:hover {
+  background-color: #2a6fc979;
 }
 
 .question-card input[type="radio"] {
