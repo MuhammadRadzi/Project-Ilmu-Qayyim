@@ -116,6 +116,8 @@ nav {
   transition: background-color 0.3s ease;
 }
 
+/* underline hover */
+
 .navcol {
   background-color: #8AAFD6;
 }
@@ -145,6 +147,8 @@ nav {
 .navcol .teks-logo {
   color: white;
 }
+
+/* end */
 
 nav.scrolled {
   background-color: #3674B5;
