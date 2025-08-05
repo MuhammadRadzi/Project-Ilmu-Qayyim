@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MuhammadRadzi/Project-Ilmu-Qayyim">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/Project-IlmuQayyim/image/ilmuqayyimlogo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Project Ilmu Qayyim</h3>
