@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #F8F8FF;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .banner-button {
@@ -336,10 +336,10 @@ nav ul {
   position: absolute;
   padding-left: 10%;
   top: 59%;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: white;
   font-size: 85px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: 0.3s ease;
   transform: translateY(-300px);
 }
@@ -350,7 +350,7 @@ nav ul {
   top: 71%;
   color: white;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: 0.3s ease;
   transform: translateY(-190px);
 }
@@ -401,7 +401,7 @@ nav ul {
   font-weight: bold;
   color: black;
   margin-bottom: 10px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   
 }
@@ -410,7 +410,7 @@ nav ul {
   font-size: 27px;
   color: black;
   margin-bottom: 15px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
 }
 
@@ -424,7 +424,7 @@ nav ul {
   font-size: 14px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: solid #3674B5 2px;
 }
 
@@ -435,7 +435,7 @@ nav ul {
 
 .content-title {
   color: #3674B5;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 40px;
   padding-left: 100px;
   padding-top: 50px;
@@ -446,7 +446,7 @@ nav ul {
 .contact-title {
   text-align: center;
   color: #3674B5;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 50px;
   margin-bottom: 100px;
   font-size: 35px;
@@ -497,7 +497,7 @@ nav ul {
   font-weight: bold;
   color: #3674B5;
   margin-top: 10px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   
 }
@@ -507,7 +507,7 @@ nav ul {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 55px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Container agar Form dan Maps sejajar */
@@ -524,13 +524,13 @@ nav ul {
 /* Bagian Formulir */
 
 .kontak, .lokasi {
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: white;
   padding: 30px;
   width: 45%; 
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 
 .kontak h2 {
@@ -619,7 +619,7 @@ iframe {
 
 /* Kartu Materi */
 .materi-card {
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   background: white;
   padding: 20px;
@@ -670,7 +670,7 @@ iframe {
 .container {
   display: flex;
   height: 100vh;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Sidebar */
@@ -879,7 +879,7 @@ iframe {
 }
 
 .footer p {
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   color: #ffffff;
 } 
@@ -898,7 +898,7 @@ iframe {
   background-color: #3674B5;
   text-align: center;
   padding: 10px 20px 30px;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
 }
 
