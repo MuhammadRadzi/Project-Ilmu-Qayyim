@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MuhammadRadzi/Project-Ilmu-Qayyim">
-    <img src="/Project-IlmuQayyim/image/ilmuqayyimlogo.png" alt="Logo" width="130">
+    <img src="/image/ilmuqayyimlogo.png" alt="Logo" width="130">
   </a>
 
 <h3 align="center">Project Ilmu Qayyim</h3>
@@ -115,4 +115,4 @@ Project Link: [https://github.com/MuhammadRadzi/Project-Ilmu-Qayyim](https://git
 [issues-url]: https://github.com/MuhammadRadzi/Project-Ilmu-Qayyim/issues
 [license-shield]: https://img.shields.io/github/license/MuhammadRadzi/Project-Ilmu-Qayyim.svg?style=for-the-badge
 [license-url]: https://github.com/MuhammadRadzi/Project-Ilmu-Qayyim/blob/master/LICENSE.txt
-[product-screenshot]: /Project-IlmuQayyim/image/preview.png
+[product-screenshot]: /image/preview.png
