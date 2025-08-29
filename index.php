@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/IQ-Transparent.png" type="image/x-icon">
     <script src="scrollup.js"></script>
+    <script src="script.js"></script>
 <body>
-    <nav id="navbar" class="navcol">
+    <nav id="navbar">
         <div class="logo">
             <img id="radzi" src="image/IQ-Contrast.png" alt="ilmuqayyimiqis">
             <div class="teks-logo">
                 Ilmu <br> Qayyim
             </div>
         </div>
-        <div>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.php" class="login-button">Login</a></li>
-            </ul>
-        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
     </nav>
     <div class="banner">
         <img src="image/gedung-iqis.jpg" alt="gedung-iqis">
         <div class="banner-text">
             <h1>Belajar Dengan<br>Ilmu Qayyim</h1>
             <p>"Menuntut ilmu itu wajib atas setiap muslim" - Rasulullah ﷺ</p>
+            <a href="subjects.html" class="banner-button">Mulai Belajar</a>
         </div>
-        <a href="subjects.html" class="banner-button">Mulai Belajar</a>
     </div>
 
     <h1 class="content-title">Terakhir dipelajari</h1>
