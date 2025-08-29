@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="image/IQ-Transparent.png" type="image/x-icon">
     <script src="scrollup.js"></script>
     <script src="script.js"></script>
+
 <body>
     <nav id="navbar">
         <div class="logo">
@@ -16,7 +18,7 @@
                 Ilmu <br> Qayyim
             </div>
         </div>
-        
+
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -25,7 +27,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="login.php" class="login-button">Login</a></li>
         </ul>
-        
+
     </nav>
     <div class="banner">
         <img src="image/gedung-iqis.jpg" alt="gedung-iqis">
@@ -37,77 +39,111 @@
     </div>
 
     <h1 class="content-title">Terakhir dipelajari</h1>
-    <div class="card-container">
-        <div class="card">
-            <img src="image/indonesia.jpg" alt="">
-            <div class="card-content">
-                <div class="card-title">Bahasa Indonesia</div>
-                <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
-                <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
+    <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-track">
+            <div class="card">
+                <img src="image/indonesia.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-title">Bahasa Indonesia</div>
+                    <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                    <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/indonesia.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-title">Bahasa Indonesia</div>
+                    <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                    <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/indonesia.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-title">Bahasa Indonesia</div>
+                    <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                    <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/pjok.png" alt="">
+                <div class="card-content">
+                    <div class="card-title">PJOK</div>
+                    <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                    <a href="pelajaran/mtr-pjok.html" class="card-button">Lanjut Belajar!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/pplg.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-title">PPLG</div>
+                    <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                    <a href="pelajaran/mtr-pplg.html" class="card-button">Lanjut Belajar!</a>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="image/indonesia.jpg" alt="">
-            <div class="card-content">
-                <div class="card-title">Bahasa Indonesia</div>
-                <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
-                <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/pjok.png" alt="">
-            <div class="card-content">
-                <div class="card-title">PJOK</div>
-                <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
-                <a href="pelajaran/mtr-pjok.html" class="card-button">Lanjut Belajar!</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/pplg.jpg" alt="">
-            <div class="card-content">
-                <div class="card-title">PPLG</div>
-                <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
-                <a href="pelajaran/mtr-pplg.html" class="card-button">Lanjut Belajar!</a>
-            </div>
-        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 
+
     <h1 class="content-title">QUIZ</h1>
-    <div class="card-container">
-        <div class="card">
-            <img src="image/indonesia.jpg" alt="">
-            <div class="card-content">
-                <div class="card-title">Bahasa Indonesia</div>
-                <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
-                <a href="pelajaran/quiz-bindo.html" class="card-button">Asah Otak!</a>
+    <div class="carousel-container quiz-carousel">
+        <button class="carousel-btn prev" onclick="moveQuiz(-1)">&#10094;</button>
+        <div class="carousel-track quiz-track">
+            <div class="card">
+                <img src="image/indonesia.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-title">Bahasa Indonesia</div>
+                    <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
+                    <a href="pelajaran/quiz-bindo.html" class="card-button">Asah Otak!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/ipas.png" alt="">
+                <div class="card-content">
+                    <div class="card-title">IPAS</div>
+                    <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
+                    <a href="pelajaran/quiz-ipas.html" class="card-button">Asah Otak!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/ppkn.png" alt="">
+                <div class="card-content">
+                    <div class="card-title">PPKN</div>
+                    <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
+                    <a href="pelajaran/quiz-ppkn.html" class="card-button">Asah Otak!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/ppkn.png" alt="">
+                <div class="card-content">
+                    <div class="card-title">PPKN</div>
+                    <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
+                    <a href="pelajaran/quiz-ppkn.html" class="card-button">Asah Otak!</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/ppkn.png" alt="">
+                <div class="card-content">
+                    <div class="card-title">PPKN</div>
+                    <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
+                    <a href="pelajaran/quiz-ppkn.html" class="card-button">Asah Otak!</a>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="image/ipas.png" alt="">
-            <div class="card-content">
-                <div class="card-title">IPAS</div>
-                <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
-                <a href="pelajaran/quiz-ipas.html" class="card-button">Asah Otak!</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/ppkn.png" alt="">
-            <div class="card-content">
-                <div class="card-title">PPKN</div>
-                <div class="card-description">Belajarlah dari kesalahan dan bangunlah dengan kebijaksanaan baru.</div>
-                <a href="pelajaran/quiz-ppkn.html" class="card-button">Asah Otak!</a>
-            </div>
-        </div>
+        <button class="carousel-btn next" onclick="moveQuiz(1)">&#10095;</button>
     </div>
-    
+
+
     <!-- Footer -->
-    
+
     <footer class="footer">
         <div class="footer-title">
             <img src="image/IQ-Contrast.png" alt="IQ-Logo" class="footer-logo" id="scrollUp">
             <span>Ilmu Qayyim</span>
         </div>
-    
+
         <div class="footer-socials">
             <a target="_blank" href="https:/facebook.com"><img src="image-socmed/Facebook.png" alt="Facebook" /></a>
             <a target="_blank" href="https:/instagram.com"><img src="image-socmed/Instagram.png" alt="Instagram" /></a>
@@ -117,9 +153,10 @@
             <a target="_blank" href="https:/whatsapp.com"><img src="image-socmed/WhatsApp.png" alt="WhatsApp" /></a>
             <a target="_blank" href="https:/telegram.org"><img src="image-socmed/Telegram.png" alt="Telegram" /></a>
         </div>
-    
-    <p class="footer-copy">&copy; 2025 Ilmu Qayyim. All rights reserved.</p>
+
+        <p class="footer-copy">&copy; 2025 Ilmu Qayyim. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>

@@ -18,6 +18,18 @@
   outline: 1px solid red; 
 } */
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -209,7 +221,7 @@ nav ul {
   color: #2c6ecb;
   font-size: 50px;
   margin-bottom: 15px;
-  margin-left: -150px;
+  /* margin-left: -150px; */
 }
 
 .text-section p {
@@ -217,7 +229,16 @@ nav ul {
   font-size: 25px;
   line-height: 1.6;
   font-weight: bold;
-  margin-left: -150px;
+  /* margin-left: -150px; */
+}
+
+.text-section h2,
+.text-section p,
+.text-section-visimisi h2,
+.text-section-visimisi p {
+  margin-left: 0;
+  text-align: center;
+  /* biar tetap rapi */
 }
 
 .image-section {
@@ -326,7 +347,7 @@ nav ul {
   color: #2c6ecb;
   font-size: 50px;
   margin-bottom: 15px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .text-section-visimisi p {
@@ -334,7 +355,7 @@ nav ul {
   font-size: 25px;
   line-height: 1.6;
   font-weight: bold;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 
@@ -868,7 +889,7 @@ iframe {
 
 .question-card input[type="radio"] {
   margin-right: 10px;
-  transform: translateX(605px);
+  transform: none;
 }
 
 .submit-btn {
@@ -1083,3 +1104,57 @@ iframe {
     font-size: 20px;
   }
 }
+
+
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-track .card {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  margin: 0 10px; /* kasih jarak kiri-kanan antar card */
+}
+
+/* Tablet: 2 card */
+@media (min-width: 768px) {
+  .carousel-track .card {
+    flex: 0 0 calc(50% - 20px); /* 2 card + jarak */
+  }
+}
+
+/* Desktop: 3 card */
+@media (min-width: 1024px) {
+  .carousel-track .card {
+    flex: 0 0 calc(33.33% - 20px); /* 3 card + jarak */
+  }
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  color: #3674B5;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+.carousel-btn:hover { background: #3674B5; }
