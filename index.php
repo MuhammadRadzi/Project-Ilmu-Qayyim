@@ -47,6 +47,14 @@
             </div>
         </div>
         <div class="card">
+            <img src="image/indonesia.jpg" alt="">
+            <div class="card-content">
+                <div class="card-title">Bahasa Indonesia</div>
+                <div class="card-description">Belajarlah dengan gembira dan semangat untuk mencapai kesuksesan hidup.</div>
+                <a href="pelajaran/mtr-bindo.html" class="card-button">Lanjut Belajar!</a>
+            </div>
+        </div>
+        <div class="card">
             <img src="image/pjok.png" alt="">
             <div class="card-content">
                 <div class="card-title">PJOK</div>
