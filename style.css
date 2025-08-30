@@ -1158,3 +1158,22 @@ iframe {
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
 .carousel-btn:hover { background: #3674B5; }
+
+/* Tombol Logout */
+.logout-btn {
+  background-color: #e63946;
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.logout-btn:hover {
+  background-color: #c1121f;
+  color: #fff !important;
+}
+

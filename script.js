@@ -82,3 +82,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.quiz-carousel .prev').addEventListener('click', stopAutoQuiz);
   document.querySelector('.quiz-carousel .next').addEventListener('click', stopAutoQuiz);
 });
+
+

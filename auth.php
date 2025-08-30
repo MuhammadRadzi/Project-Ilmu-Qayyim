@@ -22,7 +22,7 @@ if (isset($dummy_users[$username]) && $dummy_users[$username] === $password) {
     } elseif ($username === 'guru') {
         header("Location: guru.php");
     } elseif ($username === 'siswa') {
-        header("Location: siswa.php");
+        header("Location: index.php");
     } else {
         header("Location: index.php"); // fallback
     }
