@@ -22,6 +22,7 @@
     }
 
     .login-container {
+      position: relative; /* penting biar panah bisa absolute */
       background: #fff;
       padding: 30px 25px;
       border-radius: 12px;
@@ -36,6 +37,21 @@
       margin-bottom: 20px;
       color: #2d3436;
       font-size: 24px;
+    }
+
+    /* Tombol Back Arrow */
+    .back-arrow {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 22px;
+      color: #0984e3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .back-arrow:hover {
+      color: #74b9ff;
     }
 
     .error-msg {
@@ -113,6 +129,9 @@
 </head>
 <body>
   <div class="login-container">
+    <!-- Arrow Back -->
+    <a href="index.php" class="back-arrow">←</a>
+
     <h1>Login</h1>
 
     <?php if (isset($_GET['error'])): ?>
