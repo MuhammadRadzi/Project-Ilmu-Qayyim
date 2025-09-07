@@ -13,82 +13,85 @@
         <link rel="shortcut icon" href="image/IQ-Transparent.png" type="image/x-icon">
         <script src="scrollup.js"></script>
         <script src="script.js"></script>
-    
-    <style>
-/* Dropdown container */
-.dropdown {
-  position: relative;
-}
 
-/* Tombol dropdown */
-.dropbtn {
-  cursor: pointer;
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-}
+        <style>
+            /* Dropdown container */
+            .dropdown {
+                position: relative;
+            }
 
-/* Isi dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  background: white;
-  min-width: 220px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  padding: 10px;
-  z-index: 99;
-}
+            /* Tombol dropdown */
+            .dropbtn {
+                cursor: pointer;
+                color: #3674B5;
+                font-weight: bold;
+                text-decoration: none;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
 
-/* Profil di dropdown */
-.dropdown-content .profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px;
-  border-bottom: 1px solid #eee;
-}
+            /* Isi dropdown */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 40px;
+                background: white;
+                min-width: 220px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                padding: 10px;
+                z-index: 99;
+            }
 
-.dropdown-content .profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
+            /* Profil di dropdown */
+            .dropdown-content .profile {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 8px;
+                border-bottom: 1px solid #eee;
+            }
 
-/* Link dalam dropdown */
-.dropdown-content a {
-  display: block;
-  padding: 8px 10px;
-  text-decoration: none;
-  color: #333;
-  border-radius: 5px;
-}
+            .dropdown-content .profile img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
 
-.dropdown-content a:hover {
-  background: #f1f1f1;
-}
+            /* Link dalam dropdown */
+            .dropdown-content a {
+                display: block;
+                padding: 8px 10px;
+                text-decoration: none;
+                color: #333;
+                border-radius: 5px;
+            }
 
-/* Tombol logout */
-.dropdown-content a.logout {
-  background: #3674B5;
-  color: #fff;
-  margin-top: 8px;
-  text-align: center;
-}
+            .dropdown-content a:hover {
+                background: #f1f1f1;
+            }
 
-.dropdown-content a.logout:hover {
-  background: #E43636;
-}
+            /* Tombol logout */
+            .dropdown-content a.logout {
+                background: #3674B5;
+                color: #fff;
+                margin-top: 8px;
+                text-align: center;
+                transition: 0.3s ease;
 
-/* Hover effect */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+            }
 
-    </style>
+            .dropdown-content a.logout:hover {
+                background: #E43636;
+            }
+
+            /* Hover effect */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
     </head>
+
     <body>
         <nav id="navbar">
             <div class="logo">
@@ -107,31 +110,31 @@
 
                 <?php if (isset($_SESSION['user'])): ?>
                     <?php
-                        $role = $_SESSION['user'];
-                        // Tentukan dashboard sesuai role
-                        $dashboard = "#";
-                        if ($role === 'admin') {
-                            $dashboard = "admin.php";
-                        } elseif ($role === 'guru') {
-                            $dashboard = "guru.php";
-                        } elseif ($role === 'siswa') {
-                            $dashboard = "index.php";
-                        }
+                    $role = $_SESSION['user'];
+                    // Tentukan dashboard sesuai role
+                    $dashboard = "#";
+                    if ($role === 'admin') {
+                        $dashboard = "admin.php";
+                    } elseif ($role === 'guru') {
+                        $dashboard = "guru.php";
+                    } elseif ($role === 'siswa') {
+                        $dashboard = "index.php";
+                    }
                     ?>
                     <li class="dropdown">
-        <a href="#" class="dropbtn">Halo, <?= ucfirst($role); ?> ▾</a>
-        <div class="dropdown-content">
-            <div class="profile">
-                <img src="image/profile.png" alt="Profile"> <!-- bisa diganti dari DB -->
-                <span><?= ucfirst($role); ?> profile</span>
-            </div>
-            <a href="<?= $dashboard; ?>">Dashboard</a>
-            <a href="logout.php" class="logout">Keluar</a>
-        </div>
-    </li>
-<?php else: ?>
-    <li><a href="login.php" class="login-button">Login</a></li>
-<?php endif; ?>
+                        <a href="#" class="dropbtn">Halo, <?= ucfirst($role); ?> ▾</a>
+                        <div class="dropdown-content">
+                            <div class="profile">
+                                <img src="image/profile.png" alt="Profile"> <!-- bisa diganti dari DB -->
+                                <span><?= ucfirst($role); ?> profile</span>
+                            </div>
+                            <a href="<?= $dashboard; ?>">Dashboard</a>
+                            <a href="logout.php" class="logout">Keluar</a>
+                        </div>
+                    </li>
+                <?php else: ?>
+                    <li><a href="login.php" class="login-button">Login</a></li>
+                <?php endif; ?>
 
         </nav>
         <div class="banner">
